@@ -9502,7 +9502,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="U$8" library="bt" deviceset="VIN" device=""/>
 <part name="U$9" library="bt" deviceset="VDD" device="" value="5V"/>
 <part name="GND5" library="bt" deviceset="GND" device=""/>
-<part name="S2" library="bt_electromech" deviceset="SPDT" device="_OS102011MAQN1" value="OFF     ON"/>
+<part name="S2" library="bt_electromech" deviceset="SPDT" device="_OS102011MAQN1" value=""/>
 <part name="U$10" library="bt" deviceset="BTLOGO" device="-LOGO-MD"/>
 <part name="U1" library="bt_pic" deviceset="PICAXE-28X2" device=""/>
 <part name="GND4" library="bt" deviceset="GND" device=""/>
@@ -9517,24 +9517,20 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="X2" library="bt_electromech" deviceset="WIREPAD" device="_18GA" value="GND"/>
 <part name="C1" library="rcl" deviceset="C-US" device="C0603" value="104"/>
 <part name="GND8" library="bt" deviceset="GND" device=""/>
-<part name="PWR" library="bt_opto" deviceset="LED" device="CHIPLED_0603"/>
-<part name="LED2" library="bt_opto" deviceset="LED" device="CHIPLED_0603" value="C.1"/>
-<part name="R4" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
+<part name="PWR" library="bt_opto" deviceset="LED" device="CHIPLED_0805"/>
+<part name="LED2" library="bt_opto" deviceset="LED" device="CHIPLED_0805" value="C.1"/>
 <part name="GND9" library="bt" deviceset="GND" device=""/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
 <part name="R7" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="GND10" library="bt" deviceset="GND" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="FTDI_BASIC" device="PTH" value="FTDI"/>
 <part name="U$3" library="bt" deviceset="VDD" device="" value="5V"/>
 <part name="GND11" library="bt" deviceset="GND" device=""/>
 <part name="D1" library="bt_diode" deviceset="DIODE" device="_SOD123FL" value="DIODE"/>
-<part name="LED1" library="bt_opto" deviceset="LED" device="CHIPLED_0603" value="TX"/>
-<part name="R11" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
-<part name="LED3" library="bt_opto" deviceset="LED" device="CHIPLED_0603" value="RX"/>
+<part name="LED1" library="bt_opto" deviceset="LED" device="CHIPLED_0805" value="TX"/>
+<part name="LED3" library="bt_opto" deviceset="LED" device="CHIPLED_0805" value="RX"/>
 <part name="GND15" library="bt" deviceset="GND" device=""/>
 <part name="GND16" library="bt" deviceset="GND" device=""/>
 <part name="U$12" library="bt" deviceset="VDD" device="" value="5V"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
 <part name="C2" library="rcl" deviceset="C-US" device="C0603" value="104"/>
 <part name="U2" library="74xx-little-us" deviceset="74*1G04" device="DBV" technology="AHC" value="74AHC1G04"/>
 <part name="U3" library="74xx-little-us" deviceset="74*1G04" device="DBV" technology="AHC" value="74AHC1G04"/>
@@ -9544,6 +9540,10 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="U$4" library="bt" deviceset="VDD" device="" value="5V"/>
 <part name="U$14" library="bt" deviceset="VDD" device="" value="5V"/>
 <part name="GND13" library="bt" deviceset="GND" device=""/>
+<part name="R4" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R6" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R8" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
 </parts>
 <sheets>
 <sheet>
@@ -9599,9 +9599,7 @@ standard TTL level signals.</text>
 <instance part="GND8" gate="1" x="53.34" y="27.94"/>
 <instance part="PWR" gate="G$1" x="180.34" y="121.92"/>
 <instance part="LED2" gate="G$1" x="195.58" y="121.92" rot="MR0"/>
-<instance part="R4" gate="G$1" x="195.58" y="132.08" rot="R90"/>
 <instance part="GND9" gate="1" x="195.58" y="111.76"/>
-<instance part="R5" gate="G$1" x="180.34" y="132.08" rot="R90"/>
 <instance part="R7" gate="G$1" x="119.38" y="45.72" rot="R270"/>
 <instance part="GND10" gate="1" x="119.38" y="35.56"/>
 <instance part="JP2" gate="G$1" x="160.02" y="129.54" rot="R180"/>
@@ -9609,12 +9607,10 @@ standard TTL level signals.</text>
 <instance part="GND11" gate="1" x="152.4" y="106.68"/>
 <instance part="D1" gate="D1" x="152.4" y="139.7" rot="R90"/>
 <instance part="LED1" gate="G$1" x="76.2" y="104.14"/>
-<instance part="R11" gate="G$1" x="76.2" y="114.3" rot="R90"/>
 <instance part="LED3" gate="G$1" x="104.14" y="104.14"/>
 <instance part="GND15" gate="1" x="104.14" y="93.98"/>
 <instance part="GND16" gate="1" x="180.34" y="111.76"/>
 <instance part="U$12" gate="G$1" x="180.34" y="144.78"/>
-<instance part="R12" gate="G$1" x="104.14" y="114.3" rot="R90"/>
 <instance part="C2" gate="G$1" x="297.18" y="129.54"/>
 <instance part="U2" gate="A" x="91.44" y="132.08"/>
 <instance part="U3" gate="A" x="134.62" y="121.92" rot="R180"/>
@@ -9626,6 +9622,10 @@ standard TTL level signals.</text>
 <instance part="U$4" gate="G$1" x="91.44" y="149.86"/>
 <instance part="U$14" gate="G$1" x="134.62" y="149.86"/>
 <instance part="GND13" gate="1" x="76.2" y="93.98"/>
+<instance part="R4" gate="G$1" x="76.2" y="114.3" rot="R270"/>
+<instance part="R5" gate="G$1" x="104.14" y="114.3" rot="R270"/>
+<instance part="R6" gate="G$1" x="180.34" y="132.08" rot="R270"/>
+<instance part="R8" gate="G$1" x="195.58" y="132.08" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9655,6 +9655,12 @@ standard TTL level signals.</text>
 <wire x1="45.72" y1="40.64" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="JP7" gate="A" pin="8"/>
 <pinref part="U1" gate="U1" pin="C.7~|KDA|HRX"/>
+</segment>
+<segment>
+<wire x1="195.58" y1="137.16" x2="195.58" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="139.7" x2="190.5" y2="139.7" width="0.1524" layer="91"/>
+<label x="190.5" y="139.7" size="1.778" layer="95"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -9878,9 +9884,9 @@ standard TTL level signals.</text>
 <pinref part="D1" gate="D1" pin="C"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="U$12" gate="G$1" pin="VDD"/>
 <wire x1="180.34" y1="142.24" x2="180.34" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="P" pin="VCC"/>
@@ -10113,10 +10119,10 @@ standard TTL level signals.</text>
 <wire x1="43.18" y1="66.04" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="I"/>
-<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="119.38" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 <junction x="76.2" y="132.08"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -10130,10 +10136,10 @@ standard TTL level signals.</text>
 <junction x="119.38" y="76.2"/>
 <pinref part="U3" gate="A" pin="O"/>
 <wire x1="124.46" y1="121.92" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="121.92" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
 <junction x="119.38" y="121.92"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="C.3" class="0">
@@ -10206,12 +10212,6 @@ standard TTL level signals.</text>
 <pinref part="U1" gate="U1" pin="C.1*"/>
 <wire x1="45.72" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="137.16" x2="195.58" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="139.7" x2="190.5" y2="139.7" width="0.1524" layer="91"/>
-<label x="190.5" y="139.7" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="C.2" class="0">
 <segment>
@@ -10282,15 +10282,15 @@ standard TTL level signals.</text>
 <net name="N$1" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="127" x2="195.58" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="PWR" gate="G$1" pin="A"/>
 <wire x1="180.34" y1="124.46" x2="180.34" y2="127" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="TXO" class="0">
@@ -10320,15 +10320,15 @@ standard TTL level signals.</text>
 <net name="N$5" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="109.22" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="109.22" x2="104.14" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
